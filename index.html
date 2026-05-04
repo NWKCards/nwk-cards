@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NWK Cards</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+
+    /* Card shop-style background */
+    background: url('https://images.unsplash.com/photo-1606813907291-76c8e3a9f6c6?auto=format&fit=crop&w=1500&q=80');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.overlay {
+    background: rgba(0,0,0,0.75);
+    min-height: 100vh;
+}
+
+header {
+    text-align: center;
+    padding: 25px;
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    background: rgba(0,0,0,0.8);
+}
+
+nav {
+    text-align: center;
+    padding: 10px;
+    background: rgba(255,255,255,0.1);
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.hero h1 {
+    font-size: 40px;
+}
+
+.section {
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product {
+    background: rgba(255,255,255,0.95);
+    color: black;
+    width: 260px;
+    margin: 15px;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.product h3 {
+    margin: 10px 0;
+}
+
+.price {
+    font-weight: bold;
+    color: #e60000;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    background: #ff3b3b;
+    color: white;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #cc0000;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0,0,0,0.85);
+}
+</style>
+</head>
+
+<body>
+
+<div class="overlay">
+
+<header>NWK Cards</header>
+
+<nav>
+    <a href="#shop">Shop</a>
+    <a href="#pokemon">Pokémon</a>
+    <a href="#sports">Sports</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<div class="hero">
+    <h1>Your Local Trading Card Shop</h1>
+    <p>Pokémon • Sports Cards • Booster Boxes • Singles</p>
+</div>
+
+<!-- SHOP SECTION -->
+<div id="shop" class="section">
+    <h2>🔥 Featured For Sale</h2>
+
+    <div class="products">
+
+        <div class="product">
+            <h3>Pokémon Booster Box</h3>
+            <p>Sealed modern set box</p>
+            <p class="price">$120</p>
+            <button onclick="window.location.href='mailto:NWKcards@yahoo.com?subject=Pokémon Booster Box'">
+                Buy Now
+            </button>
+        </div>
+
+        <div class="product">
+            <h3>Sports Card Pack</h3>
+            <p>NFL / NBA mix packs</p>
+            <p class="price">$25</p>
+            <button onclick="window.location.href='mailto:NWKcards@yahoo.com?subject=Sports Card Pack'">
+                Buy Now
+            </button>
+        </div>
+
+        <div class="product">
+            <h3>Rare Singles</h3>
+            <p>Graded & raw cards</p>
+            <p class="price">DM for Price</p>
+            <button onclick="window.location.href='mailto:NWKcards@yahoo.com?subject=Rare Singles'">
+                Buy Now
+            </button>
+        </div>
+
+    </div>
+</div>
+
+<!-- CONTACT -->
+<div id="contact" class="section">
+    <h2>Contact</h2>
+    <p>Email: NWKcards@yahoo.com</p>
+</div>
+
+<footer>
+    © 2026 NWK Cards
+</footer>
+
+</div>
+
+</body>
+</html>
